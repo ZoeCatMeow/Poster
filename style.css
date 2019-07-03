@@ -1,0 +1,45 @@
+h1 {
+  text-align: center;
+}
+
+#poster {
+  margin: 0 auto;
+  padding: 50px;
+  width: 60%;
+  min-height: 100%;
+  background-image: url(https://s1.thcdn.com/productimg/1600/1600/11317008-1534430854143549.jpg);
+  
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto auto auto auto auto auto auto;
+  grid-template-areas: ". Tagline Tagline Tagline Tagline ." ". Title Title Title Title ." ". Content Content Content Content ." ". Content Content Content Content ." ". Content Content Content Content ." ". Content Content Content Content ." ". Content Content Content Content ." ". Content Content Content Content ." ". Content Content Content Content ." ". Reviews Reviews Reviews Reviews .";
+  font-family: Abel;
+}
+
+#poster * {
+  text-align: center;
+}
+
+.Tagline {
+  grid-area: Tagline;
+  color: white;
+}
+
+.Title {
+  grid-area: Title;
+  color: #ffde00;
+  padding: 20px;
+  border: 2px solid #ffde00;
+  margin: 20px auto;
+  border-radius: 15px;
+  font-family: 'Geostar';
+}
+
+.Content {
+  grid-area: Content;
+}
+
+.Reviews {
+  grid-area: Reviews;
+  color: purple;
+}
